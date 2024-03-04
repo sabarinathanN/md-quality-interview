@@ -1,0 +1,172 @@
+// .login-container {
+//     display: flex;
+//     justify-content:center;
+//     align-items:center;
+   
+    
+//     .login-container-wrapper{
+//         display: flex;
+//         justify-content: center;
+//         column-gap: 10%;
+//         width: 80%;
+//         .login-form{
+//             .login-form-wrapper{
+               
+//                 .login-form-introparagraph{
+//                    width: 80%;
+//                    display: flex;
+//                    justify-content:center;
+//                    .login-paragraph-wrapper{
+//                     h4{
+//                         margin: 0 auto;
+//                         font-size:70px
+//                     }
+//                     p{
+                       
+//                         font-size:20px
+//                     }
+//                    }
+                   
+//                 }
+//                 .login-form-inputarea{
+//                     form{
+                        
+//                         .input-area{
+//                             width: 60%;
+                            
+//                         }
+//                     }
+//                 }
+//                 .sso-login-container{
+//                     .sso-logo-separator{
+
+//                     }
+//                     .sso-logos-contianer{
+//                         .sso-ullist{
+//                             list-style: none;
+//                             display:flex;
+//                             li{
+
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         .login-image-area{
+//             border:2px solid #d3e0ed;
+//             border-radius: 8%;
+//             .login-image-container{
+//                .login-image-right{
+//                 border-radius: 8%;
+//                }
+//             }
+//         }
+//     }
+// }
+
+// login-page.scss
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .login-form {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .login-form-introparagraph {
+    margin-bottom: 20px;
+    h4{
+        margin: 0 auto;
+        font-size:40px;
+        text-align: center;
+    }
+    p {
+        font-size: 15px;
+        text-align: center;
+      }
+  }
+  
+  .login-form-inputarea {
+    margin-bottom: 20px;
+    width: 100%;
+    form{
+        
+        a{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        button{
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding:10px;
+            border-radius: 20px;
+            margin: 10px 0 10px 0;
+        }
+    }
+  }
+  
+  .input-area {
+    width: 95%;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .sso-login-container {
+    margin-top: 20px;
+  }
+  
+  .sso-logo-separator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .left-hr-line, .right-hr-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+    column-gap: 10px;
+  }
+  
+  .sso-ullist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sso-logo {
+    margin: 0 20px;
+  }
+  
+  .register-content {
+    text-align: center;
+  }
+  
+  .register-content a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
