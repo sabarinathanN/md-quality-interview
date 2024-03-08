@@ -52,7 +52,7 @@ const LoginPage = (()=>{
                                 <input 
                                 className="input-area" 
                                 type="email" 
-                                placeholder="Username"
+                                placeholder="Username/Email"
                                 name="email"
                                 value={inputdata.email}
                                 onChange={handleInputChange}
@@ -89,7 +89,7 @@ const LoginPage = (()=>{
                         </div>
                         <div className="register-container">
                             <p className="register-content">
-                                Not a member? <a>Register now</a>
+                                Not a member? <a href="/signup">Register now</a>
                             </p>
                         </div>
                         </div>

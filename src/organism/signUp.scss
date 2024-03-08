@@ -1,0 +1,107 @@
+.signup-page-container {
+  height: 90vh;
+  margin: 20px;
+  .signup-page-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .signup-logo-container {
+      width: 50%;
+      .signup-logo-wrapper {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .signup-form-container {
+      width: 40%;
+      border: 10px solid rgb(223, 222, 222);
+      border-radius: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      display: flex;
+      align-items: center;
+
+      .signup-form-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+
+        .signup-form-header {
+          display: flex;
+          justify-content: center;
+          margin: 20px;
+          .signup-form-header-wrapper {
+            text-align: center;
+            h4 {
+              margin: 0;
+              font-size: 35px;
+            }
+            p {
+              margin: 10px;
+            }
+          }
+        }
+
+        .input-area-section-container {
+          .input-area-section-wrapper {
+            display: flex;
+            .input-field {
+              margin: 0 5px;
+              width: 100%;
+            }
+            .select-option{
+              width: 55%;
+            }
+          }
+        }
+
+        .signup-form-login-container {
+          margin: 0 auto;
+          .signup-form-login-area {
+            .sso-login-container {
+              margin-top: 20px;
+            }
+
+            .sso-logo-separator {
+              display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+              column-gap: 10px;
+            }
+
+            .left-hr-line,
+            .right-hr-line {
+              flex-grow: 1;
+              height: 1px;
+              background-color: #ccc;
+              column-gap: 10px;
+            }
+
+            .sso-ullist {
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+              display: flex;
+              justify-content: center;
+            }
+
+            .sso-logo {
+              margin: 0 20px;
+            }
+
+            .register-content {
+              text-align: center;
+            }
+
+            .register-content a {
+              color: #007bff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
