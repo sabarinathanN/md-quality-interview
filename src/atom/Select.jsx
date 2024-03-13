@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { FormControl, Typography, MenuItem, Select } from '@mui/material';
 import './select.scss';
 
@@ -12,11 +12,18 @@ const SelectInput = (props) => {
         className = ""
     } = props;
 
+    const [defaultValue, setDefaultValue] = useState("");
+
+    useEffect(() => {
+        setDefaultValue(value); // Set the default value based on the prop value
+    }, [value]);
+
     return (
         <Fragment>
             <FormControl fullWidth variant="outlined">
                 <Typography>{label}</Typography>
                 <Select
+                    value={defaultValue} // Set the default value here
                     onChange={(e) => onChange(e.target.value, name)}
                     name={name}
                     className={`select-input ${className}`}
